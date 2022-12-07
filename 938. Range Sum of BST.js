@@ -1,0 +1,1 @@
+rangeSumBST=(z, l, r) =>{let sum = 0;dfs(z);return sum; function dfs(x) {if (!x) {return;}if (x.val < l) {dfs(x.right);return}if (x.val > r) {dfs(x.left);return;}sum += x.val;dfs(x.left);dfs(x.right);}}
